@@ -19,30 +19,31 @@
         <h2>Volta Region Staff Nominal Roll</h2>
         <p style="text-align:center;">Please fill in your details for October 2026.</p>
         
-     
-        <form action="https://formsubmit.co/edemenam@gmail.com" method="POST">
-       <input type="hidden" name="_captcha" value="false">
-       <input type="hidden" name="_subject" value="New Nominal Roll Submission!">
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="PASTE_YOUR_WEB3FORMS_KEY_HERE">
+            <input type="hidden" name="subject" value="New Nominal Roll Submission!">
+            
             <label for="staffId">Staff ID</label>
             <input type="text" id="staffId" name="Staff ID" required>
 
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="Full Name" required>
 
-           <label for="rank">Current Rank</label>
-   <select id="rank" name="Current Rank" required>
-       <option value="" disabled selected>-- Select your GES Rank --</option>
-       <option value="Untrained Teacher">Untrained Teacher</option>
-       <option value="Trained Teacher">Trained Teacher</option>
-       <option value="Senior Superintendent II">Senior Superintendent II</option>
-       <option value="Senior Superintendent I">Senior Superintendent I</option>
-       <option value="Principal Superintendent">Principal Superintendent</option>
-       <option value="Assistant Director II">Assistant Director II</option>
-       <option value="Assistant Director I">Assistant Director I</option>
-       <option value="Deputy Director">Deputy Director</option>
-       <option value="Director">Director</option>
-       <option value="Other">Other (Specify in Remarks)</option>
-   </select>
+            <label for="rank">Current Rank</label>
+            <select id="rank" name="Current Rank" required>
+                <option value="" disabled selected>-- Select your GES Rank --</option>
+                <option value="Untrained Teacher">Untrained Teacher</option>
+                <option value="Trained Teacher">Trained Teacher</option>
+                <option value="Senior Superintendent II">Senior Superintendent II</option>
+                <option value="Senior Superintendent I">Senior Superintendent I</option>
+                <option value="Principal Superintendent">Principal Superintendent</option>
+                <option value="Assistant Director II">Assistant Director II</option>
+                <option value="Assistant Director I">Assistant Director I</option>
+                <option value="Deputy Director">Deputy Director</option>
+                <option value="Director">Director</option>
+                <option value="Other">Other (Specify in Remarks)</option>
+            </select>
+
             <label for="dob">Date of Birth</label>
             <input type="date" id="dob" name="Date of Birth" required>
 
