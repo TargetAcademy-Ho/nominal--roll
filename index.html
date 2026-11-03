@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Nominal Roll - October 2026</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; padding: 20px; background-color: #f4f4f4; }
+        .container { background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h2 { text-align: center; color: #333; }
+        label { display: block; margin-top: 15px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; margin-top: 5px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { width: 100%; padding: 12px; background-color: #28a745; color: white; border: none; border-radius: 4px; margin-top: 20px; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Volta Region Staff Nominal Roll</h2>
+        <p style="text-align:center;">Please fill in your details for October 2026.</p>
+        
+     
+        <form action="https://formspree.io/f/mrpprzny" method="POST">
+            
+            <label for="staffId">Staff ID</label>
+            <input type="text" id="staffId" name="Staff ID" required>
+
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="Full Name" required>
+
+            <label for="rank">Current Rank</label>
+            <input type="text" id="rank" name="Current Rank" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="Date of Birth" required>
+
+            <label for="ssnit">SSNIT Number</label>
+            <input type="text" id="ssnit" name="SSNIT Number" required>
+
+            <label for="ghanaCard">Ghana Card Number</label>
+            <input type="text" id="ghanaCard" name="Ghana Card Number" required>
+
+            <label for="mgmtUnit">Management Unit on Payslip</label>
+            <input type="text" id="mgmtUnit" name="Management Unit" required>
+
+            <label for="bankName">Bank Name</label>
+            <input type="text" id="bankName" name="Bank Name" required>
+
+            <label for="accNumber">Account Number</label>
+            <input type="text" id="accNumber" name="Account Number" required>
+
+            <label>Status</label>
+            <select name="Status" required>
+                <option value="At Post">At Post</option>
+                <option value="On Leave">On Leave</option>
+            </select>
+
+            <label for="leaveType">Type of Leave (if applicable)</label>
+            <input type="text" id="leaveType" name="Type of Leave">
+
+            <label for="remarks">Remarks</label>
+            <textarea id="remarks" name="Remarks" rows="4"></textarea>
+
+            <button type="submit">Submit Details</button>
+        </form>
+    </div>
+</body>
+</html>
